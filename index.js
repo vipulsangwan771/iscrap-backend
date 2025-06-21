@@ -19,7 +19,7 @@ const CACHE_TTL = 120 * 1000; // 2 minutes in milliseconds
 const CACHE_FILE = path.join(__dirname, 'cached.json');
 const MAX_POSTS = 50; // Maximum posts to fetch
 
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'https://i-scrap.onrender.com' }));
 app.use(express.json());
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
